@@ -1,0 +1,55 @@
+# -*- encoding=utf8 -*-
+
+from airtest.core.api import *
+import json
+import urllib.request
+import urllib.parse
+import sys
+import time
+
+nowDate = int(time.strftime("%Y%m%d", time.localtime()),10)
+
+holiday_url = 'http://api.apihubs.cn/holiday/get'
+f = urllib.request.urlopen(holiday_url)
+body = f.read().decode('utf-8')
+bodyObj = json.loads(body)
+dateList = bodyObj["data"]["list"]
+today =  [x for x in dateList if x["date"] == nowDate]
+
+is_workday = today[0]["workday"]
+
+if is_workday != 1:
+    sys.exit()
+    
+
+keyevent("home")
+
+stop_app('com.ss.android.lark')
+
+sleep(5)
+
+start_app('com.ss.android.lark')
+
+sleep(5)
+touch(Template(r"tpl1633933927403.png", record_pos=(-0.085, 0.805), resolution=(1080, 1920)))
+
+sleep(5)
+
+touch(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolution=(1080, 1920)))
+
+sleep(5)
+
+if exists(Template(r"tpl1633920745177.png", record_pos=(0.005, 0.039), resolution=(1080, 1920))):
+    touch(Template(r"tpl1633920767258.png", record_pos=(0.005, 0.165), resolution=(1080, 1920)))
+if exists(Template(r"tpl1633920811411.png", record_pos=(0.008, 0.047), resolution=(1080, 1920))):
+    touch(Template(r"tpl1633920826053.png", record_pos=(-0.004, 0.252), resolution=(1080, 1920)))
+    sleep(5) 
+if exists(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920))):
+    touch(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920)))
+if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))):
+    touch(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920)))
+    
+
+sleep(5)
+
+keyevent("home")
