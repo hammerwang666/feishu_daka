@@ -30,14 +30,19 @@ sleep(5)
 
 start_app('com.ss.android.lark')
 
-sleep(5)
+sleep(10)
+
+if exists(Template(r"tpl1634293506221.png", record_pos=(0.011, 0.561), resolution=(1080, 1920))):
+    touch(Template(r"tpl1634293519191.png", record_pos=(-0.209, 0.558), resolution=(1080, 1920)))
+
+
 touch(Template(r"tpl1633933927403.png", record_pos=(-0.085, 0.805), resolution=(1080, 1920)))
 
 sleep(5)
 
 touch(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolution=(1080, 1920)))
 
-sleep(5)
+sleep(10)
 
 if exists(Template(r"tpl1633920745177.png", record_pos=(0.005, 0.039), resolution=(1080, 1920))):
     touch(Template(r"tpl1633920767258.png", record_pos=(0.005, 0.165), resolution=(1080, 1920)))
