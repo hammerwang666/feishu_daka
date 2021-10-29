@@ -8,6 +8,7 @@ import sys
 import time
 
 nowDate = int(time.strftime("%Y%m%d", time.localtime()),10)
+nowHour = int(time.strftime("%H", time.localtime()))
 
 holiday_url = 'http://api.apihubs.cn/holiday/get'
 f = urllib.request.urlopen(holiday_url)
@@ -52,7 +53,7 @@ if exists(Template(r"tpl1633920811411.png", record_pos=(0.008, 0.047), resolutio
     sleep(5) 
 if exists(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920))):
     touch(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920)))
-if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))):
+if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))) && nowHour >= 18:
     if exists(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920))):
         touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
         sleep(3)
