@@ -43,7 +43,7 @@ sleep(5)
 
 touch(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolution=(1080, 1920)))
 
-sleep(10)
+sleep(20)
 
 if exists(Template(r"tpl1633920745177.png", record_pos=(0.005, 0.039), resolution=(1080, 1920))):
     touch(Template(r"tpl1633920767258.png", record_pos=(0.005, 0.165), resolution=(1080, 1920)))
@@ -53,7 +53,10 @@ if exists(Template(r"tpl1633920811411.png", record_pos=(0.008, 0.047), resolutio
     sleep(5) 
 if exists(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920))):
     touch(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resolution=(1080, 1920)))
-if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))) && nowHour >= 18:
+    if exists(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920))):
+        touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
+        sleep(3)
+if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))) and nowHour >= 18:
     if exists(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920))):
         touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
         sleep(3)
