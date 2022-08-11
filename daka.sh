@@ -33,14 +33,14 @@ sleep 10s
 if [ $current_hour < 12 ]
 then
  echo "上班打卡"
- adb shell tap 395 540
+ adb shell input tap 395 540
 else
  echo "下班打卡"
- adb shell tap 389 825
+ adb shell input tap 389 825
 fi
 sleep 5s
 
 # 打卡完成
 adb shell am force-stop com.ss.android.lark
-adb disconnect 172.63.52.54:5555
 adb shell input keyevent 26
+adb disconnect 172.63.52.54:5555
