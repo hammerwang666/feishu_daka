@@ -1,19 +1,21 @@
 # feishu_daka
-feishu daka base on airtest
+feishu daka base on adb
 
 ## Install
-download and install [airtest](https://airtest.netease.com/download.html?download=mac/AirtestIDE-mac-1.2.12.dmg&&site=io)
+- open debug mode on android phone
+- connect to phone
+- adb tcpip 5555
 
 ## Get device serial number
-- open airtest IDE
-- import feishu_daka project
-- run
-- get the serial number from console panel
+- adb devices
+
+## Get feishu touch coordinate and replace in the daka.sh
+- ex. adb -s $1 shell input tap 300 1464
 
 ## Deploy
 ```
 crontab -e
-36 8 * * *  sh {path_to_feishu_daka}/feishu.sh {device_serial_no}
+36 8 * * *  sh {path_to_feishu_daka}/daka.sh {device_serial_no}
 ```
 
  
