@@ -22,7 +22,7 @@ is_workday = today[0]["workday"]
 if is_workday != 1:
     sys.exit()
     
-
+keyevent("26")
 keyevent("home")
 
 stop_app('com.ss.android.lark')
@@ -95,3 +95,5 @@ sleep(5)
 
 keyevent("home")
 stop_app('com.ss.android.lark')
+
+keyevent("26")
