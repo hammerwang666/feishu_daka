@@ -50,6 +50,9 @@ if exists(Template(r"tpl1639044985375.png", record_pos=(-0.082, 1.029), resoluti
 
 sleep(5)
 
+if exists(Template(r"tpl1668525645996.png", record_pos=(-0.124, 0.128), resolution=(720, 1600))):
+    touch(Template(r"tpl1668525645996.png", record_pos=(-0.124, 0.128), resolution=(720, 1600)))
+
 if exists(Template(r"tpl1648635211726.png", record_pos=(-0.369, 0.144), resolution=(720, 1600))):
     touch(Template(r"tpl1648635211726.png", record_pos=(-0.369, 0.144), resolution=(720, 1600)))
 
@@ -60,6 +63,8 @@ if exists(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolut
 if exists(Template(r"tpl1639132918918.png", record_pos=(-0.125, -0.217), resolution=(720, 1600))): 
     
     touch(Template(r"tpl1639132918918.png", record_pos=(-0.125, -0.217), resolution=(720, 1600)))
+    
+
 
 
     
@@ -82,6 +87,7 @@ if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolutio
         touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
         sleep(3)
     touch(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920)))
+
     
 if exists(Template(r"tpl1634608412879.png", record_pos=(0.043, -0.144), resolution=(1080, 1920))):
     touch(Template(r"tpl1634608412879.png", record_pos=(0.043, -0.144), resolution=(1080, 1920)))
