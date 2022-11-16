@@ -31,45 +31,20 @@ sleep(5)
 if exists(Template(r"tpl1646294491180.png", record_pos=(0.003, 0.896), resolution=(720, 1600))):
     touch(Template(r"tpl1646294516333.png", record_pos=(0.003, 0.986), resolution=(720, 1600)))
     
-start_app('com.ss.android.lark')
-
-sleep(10)
+# start_app('com.ss.android.lark')
 
 
+
+if exists(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600))):
+    touch(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600)))
+
+sleep(30)
 
 if exists(Template(r"tpl1634293506221.png", record_pos=(0.011, 0.561), resolution=(1080, 1920))):
     touch(Template(r"tpl1634293519191.png", record_pos=(-0.209, 0.558), resolution=(1080, 1920)))
 
-
-if exists(Template(r"tpl1633933927403.png", record_pos=(-0.085, 0.805), resolution=(1080, 1920))):
-    touch(Template(r"tpl1633933927403.png", record_pos=(-0.085, 0.805), resolution=(1080, 1920)))
-    
-if exists(Template(r"tpl1639044985375.png", record_pos=(-0.082, 1.029), resolution=(720, 1600))): 
-    touch(Template(r"tpl1639044985375.png", record_pos=(-0.082, 1.029), resolution=(720, 1600)))
-
-
-sleep(5)
-
-if exists(Template(r"tpl1668525645996.png", record_pos=(-0.124, 0.128), resolution=(720, 1600))):
-    touch(Template(r"tpl1668525645996.png", record_pos=(-0.124, 0.128), resolution=(720, 1600)))
-
-if exists(Template(r"tpl1648635211726.png", record_pos=(-0.369, 0.144), resolution=(720, 1600))):
-    touch(Template(r"tpl1648635211726.png", record_pos=(-0.369, 0.144), resolution=(720, 1600)))
-
-if exists(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolution=(1080, 1920))):
-    touch(Template(r"tpl1632813414657.png", record_pos=(-0.114, -0.017), resolution=(1080, 1920)))
-
-    
-if exists(Template(r"tpl1639132918918.png", record_pos=(-0.125, -0.217), resolution=(720, 1600))): 
-    
-    touch(Template(r"tpl1639132918918.png", record_pos=(-0.125, -0.217), resolution=(720, 1600)))
     
 
-
-
-    
-
-sleep(10)
 
 if exists(Template(r"tpl1633920745177.png", record_pos=(0.005, 0.039), resolution=(1080, 1920))):
     touch(Template(r"tpl1633920767258.png", record_pos=(0.005, 0.165), resolution=(1080, 1920)))
