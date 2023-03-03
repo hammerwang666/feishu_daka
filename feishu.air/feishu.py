@@ -27,7 +27,7 @@ keyevent("home")
 
 stop_app('com.ss.android.lark')
 
-sleep(5)
+sleep(6)
 if exists(Template(r"tpl1646294491180.png", record_pos=(0.003, 0.896), resolution=(720, 1600))):
     touch(Template(r"tpl1646294516333.png", record_pos=(0.003, 0.986), resolution=(720, 1600)))
     
