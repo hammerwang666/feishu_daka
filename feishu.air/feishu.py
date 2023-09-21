@@ -27,18 +27,21 @@ keyevent("home")
 
 stop_app('com.ss.android.lark')
 
-sleep(6)
-if exists(Template(r"tpl1646294491180.png", record_pos=(0.003, 0.896), resolution=(720, 1600))):
-    touch(Template(r"tpl1646294516333.png", record_pos=(0.003, 0.986), resolution=(720, 1600)))
+sleep(2)
+#if exists(Template(r"tpl1646294491180.png", record_pos=(0.003, 0.896), resolution=(720, 1600))):
+#    touch(Template(r"tpl1646294516333.png", record_pos=(0.003, 0.986), resolution=(720, 1600)))
     
 # start_app('com.ss.android.lark')
 
 
+if exists(Template(r"tpl1695276294379.png", record_pos=(0.383, 0.683), resolution=(1080, 2340))):
+    touch(Template(r"tpl1695276294379.png", record_pos=(0.383, 0.683), resolution=(1080, 2340)))
 
-if exists(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600))):
-    touch(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600)))
+#if exists(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600))):
+ #   touch(Template(r"tpl1668566245063.png", record_pos=(0.119, 0.886), resolution=(720, 1600)))
+    
 
-sleep(30)
+sleep(5)
 
 if exists(Template(r"tpl1634293506221.png", record_pos=(0.011, 0.561), resolution=(1080, 1920))):
     touch(Template(r"tpl1634293519191.png", record_pos=(-0.209, 0.558), resolution=(1080, 1920)))
