@@ -11,16 +11,16 @@ nowDate = int(time.strftime("%Y%m%d", time.localtime()),10)
 nowHour = int(time.strftime("%H", time.localtime()))
 
 holiday_url = 'http://api.apihubs.cn/holiday/get'
-f = urllib.request.urlopen(holiday_url)
-body = f.read().decode('utf-8')
-bodyObj = json.loads(body)
-dateList = bodyObj["data"]["list"]
-today =  [x for x in dateList if x["date"] == nowDate]
+# f = urllib.request.urlopen(holiday_url)
+# body = f.read().decode('utf-8')
+# bodyObj = json.loads(body)
+# dateList = bodyObj["data"]["list"]
+# today =  [x for x in dateList if x["date"] == nowDate]
 
-is_workday = today[0]["workday"]
+# is_workday = today[0]["workday"]
 
-if is_workday != 1:
-    sys.exit()
+# if is_workday != 1:
+#     sys.exit()
     
 keyevent("26")
 keyevent("home")
@@ -32,6 +32,19 @@ sleep(2)
 #    touch(Template(r"tpl1646294516333.png", record_pos=(0.003, 0.986), resolution=(720, 1600)))
     
 # start_app('com.ss.android.lark')
+
+if exists(Template(r"tpl1736905724181.png", record_pos=(0.192, 0.678), resolution=(1080, 2340))):
+    touch(Template(r"tpl1736905724181.png", record_pos=(0.192, 0.678), resolution=(1080, 2340)))
+    
+sleep(10)
+
+
+if exists(Template(r"tpl1736905772799.png", record_pos=(-0.079, 0.953), resolution=(1080, 2340))):
+        touch(Template(r"tpl1736905772799.png", record_pos=(-0.079, 0.953), resolution=(1080, 2340)))
+        
+if exists(Template(r"tpl1736905801218.png", record_pos=(-0.125, -0.398), resolution=(1080, 2340))):
+        touch(Template(r"tpl1736905801218.png", record_pos=(-0.125, -0.398), resolution=(1080, 2340)))
+        
 
 
 if exists(Template(r"tpl1695276294379.png", record_pos=(0.383, 0.683), resolution=(1080, 2340))):
@@ -60,17 +73,18 @@ if exists(Template(r"tpl1632816183705.png", record_pos=(0.036, -0.147), resoluti
     if exists(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920))):
         touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
         sleep(3)
+if exists(Template(r"tpl1736905988342.png", record_pos=(-0.004, 0.781), resolution=(1080, 2340))):
+    touch(Template(r"tpl1736905988342.png", record_pos=(-0.004, 0.781), resolution=(1080, 2340)))
+            
 if exists(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920))) and nowHour >= 18:
     if exists(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920))):
         touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
         sleep(3)
     touch(Template(r"tpl1632813825231.png", record_pos=(0.027, 0.187), resolution=(1080, 1920)))
 
-    
-if exists(Template(r"tpl1634608412879.png", record_pos=(0.043, -0.144), resolution=(1080, 1920))):
-    touch(Template(r"tpl1634608412879.png", record_pos=(0.043, -0.144), resolution=(1080, 1920)))
-    if exists(Template(r"tpl1634608461124.png", record_pos=(0.008, 0.298), resolution=(1080, 1920))):
-        touch(Template(r"tpl1634608486464.png", record_pos=(0.195, 0.437), resolution=(1080, 1920)))
+
+
+
 
 
     
